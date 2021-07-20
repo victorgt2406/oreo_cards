@@ -1,0 +1,147 @@
+/*
+	Autor: Víctor Gutiérrez Tovar
+	Fecha: 11/1/2021
+	Titulo: index.css
+	Html: index.html, contenida en la carpeta 6° Practica (título: VGTgames)
+*/
+html{
+	animation: fondoRotate 6s linear 0s infinite;
+}
+@keyframes fondoRotate{
+	from{
+		background-color: #FFA600;
+	}
+	10%{
+		background-color: #00FF87;
+	}
+	50%{
+		background-color: #00B6FF;
+	}
+	75%{
+		background-color: #00FF87;
+	}
+	100%{
+		background-color: #FFA600;
+	}
+}
+/*Fonts*/
+	@font-face{
+		font-family: 'android';
+		src: url('../font/android_101/Android 101.ttf');
+	}
+
+/*letras*/
+	h1{
+		color: #FFFFFF;
+		font-family: android;
+		font-size: 50px;
+		text-decoration: none;
+	}
+
+	.titulo{
+		color: #FFFFFF;
+		font-family: android;
+		font-size: 50px;
+	}
+	.record{
+		color: #FFFFFF;
+		font-family: Calibri;
+		font-size: 20px;
+	}
+	.creditos{
+		color: #FFFFFF;
+		font-family: Calibri;
+		font-size: 15px;
+	}
+
+/*Input*/
+	/*player*/
+		#player{
+			/*caja*/
+			background-color: #FFFFFF; 
+			padding: 2px;
+			padding-left: 10px;
+
+			border: 1px solid #000000;
+			border-radius: 2px;
+
+			outline: none;
+			/*letra*/
+			color: #000000;
+			font-family: Calibri;
+			font-size: 20px;
+		}
+		#player:hover{
+			background-color: #F6F6F6;
+			color: #000000;
+		}
+		#player::placeholder{
+			color: #7F7F7F;
+		}
+		#player:hover::placeholder{
+			color: #000000;
+		}
+
+	/*boton*/
+		.boton{
+			/*caja*/
+			background-color: #000000;
+			outline: none;
+			border: 0px;
+			border-radius: 2px;
+			padding: 10px;
+			margin-left: 1px;
+			/*letra*/
+			color: #FFFFFF;
+			font-family: Calibri;
+			font-size: 20px;
+		}
+		.boton:hover{
+			background-color: #404040;
+		}
+
+
+
+/*ESTRUCTURA*/
+	header{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	main{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	section{
+		/*estructura flex*/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		/*diseño/
+		background-color: #000000;
+		padding: 20px;
+		border: 5px solid #00AAFF;
+		border-radius: 15px;
+		*/
+	}
+	form{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	footer{
+		display: flex;
+		justify-content: center;
+	}
+/*resto*/
+	#imgcarta{
+		margin-left: 40px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border: 0.1px;
+		border-radius: 30px;
+		height: 300px;
+	}

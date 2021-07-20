@@ -1,0 +1,173 @@
+/*
+	Autor: Víctor Gutiérrez Tovar
+	Fecha: 11/1/2021
+	Titulo: JuegosDeCartas.css
+	Html: index.html, contenida en la carpeta 6° Practica (título: VGTgames)
+*/
+html{
+	background-color: #309AC8;
+}
+
+/*Fonts*/
+	@font-face{
+		font-family: 'android';
+		src: url('../font/android_101/Android 101.ttf');
+	}
+/*letras*/
+	h1{
+		/*Estructura*/
+		display: flex;
+		justify-content: center;
+		/*letra*/
+		color: #FFFFFF;
+		font-family: android;
+		font-size: 50px;
+	}
+	h2{
+		color: #FFFFFF;
+		font-family: Calibri;
+		font-size: 30px;
+	}
+	/*linknav*/
+		.linknav{
+			/*letra*/
+				color: #FFFFFF;
+				font-family: Calibri;
+				font-size: 20px;
+				text-decoration: none;
+			/*caja*/
+				background-color: #000000;
+				padding: 10px;
+				border-radius: 10px;
+		}
+		.linknav:hover{
+			/*letra*/
+				color: #FFF000;
+			/*caja*/
+				background-color: #404040;
+		}
+	/*Ganar*/
+		.ganar{
+			font-family: Consolas;
+			font-size: 50px;
+			animation: colorRotate 6s linear 0s infinite;
+		}
+		@keyframes colorRotate{
+			from{
+				color: #6666ff;
+			}
+			10%{
+				color: #0099ff;
+			}
+			50%{
+				color: #00ff00;
+			}
+			75%{
+				color: #ff3399;
+			}
+			100%{
+				color: #6666ff;
+			}
+		}
+	.inicio{
+		color: #FFFFFF;
+		font-family: Calibri;
+		font-size: 25px;
+	}
+
+	.creditos{
+		color: #FFFFFF;
+		font-family: Calibri;
+		font-size: 15px;
+	}
+	#crono{
+		color: #FFFFFF;
+		font-family: Calibri;
+		font-size: 15px;
+	}
+
+/*ESTRUCTURA*/
+
+	nav{
+		display: flex;
+		justify-content: center;
+	}
+
+	#contenido{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+
+	}
+	main{
+		width:70%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		/*caja*/
+		margin-top: 100px;
+		background-color: #001331;
+		border-radius: 10px;
+		padding-bottom: 20px;
+	}
+
+	aside{
+		/*caja*/
+		margin-left: 1%;
+		width:29%;
+		margin-top: 100px;
+		background-color: #001331;
+		border-radius: 10px;
+		height: 523px;
+		/**/
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+		align-items: center;
+		text-align: center;
+	}
+
+	.imagen{
+		height: 200px;
+		margin: 5px;
+	}
+	.fila{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	footer{
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+		align-items: center;
+		text-align: center;
+	}
+
+/*Juego*/
+	/*Boton Jugar*/
+		.invisible{
+			visibility: hidden;
+		}
+		.botonvisible{
+			/*caja*/
+			background-color: #FFF000;
+			outline-color: invert;
+			border: 0px;
+			border-radius: 2px;
+			padding: 10px;
+			margin-left: 1px;
+			/*letra*/
+			color: #00AAFF;
+			font-family: Calibri;
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+		.botonvisible:hover{
+			background-color: #00AAFF;
+			color: #FFF000;
+		}
